@@ -11,7 +11,6 @@
     </header>
 
     <main>
-        <!-- Video Section -->
         <h2>Lecture Video</h2>
         <p>
             <iframe width="560" height="315"
@@ -23,42 +22,175 @@
                 allowfullscreen>
             </iframe>
         </p>
-
-        <!-- Notes / Topics Section -->
         <h2>Lecture Notes</h2>
         <p>Here are the main topics covered in Day 5:</p>
         <ol>
-            <!-- Replace the below with the real list once you share screenshot -->
-            <li><strong>Introduction</strong></li>
-            <li><strong>Form Basics</strong></li>
-            <li><strong>Input Types</strong></li>
-            <li><strong>Labels & Accessibility</strong></li>
-            <li><strong>Radio Buttons & Checkboxes</strong></li>
-            <li><strong>Select / Dropdowns</strong></li>
-            <li><strong>Textarea</strong></li>
-            <li><strong>Form Action & Method</strong></li>
-            <li><strong>Fieldset & Legend</strong></li>
-            <li><strong>Examples & Validations (if covered)</strong></li>
-            <li><strong>Homework / Practice</strong></li>
-        </ol>
+    <li>
+        <strong>Introduction</strong><br>
+        Overview of HTML forms and their purpose in collecting user input.
+    </li>
+    <li>
+        <strong>What is an HTML Form ?</strong><br>
+        An HTML form is a section of a webpage used to gather information from users.
+    </li>
+    <li>
+        <strong>Code Section</strong><br>
+        Section where HTML form elements are written and demonstrated.
+    </li>
+    <li>
+        <strong>form Tag</strong><br>
+        The &lt;form&gt; tag defines the beginning and end of an HTML form.
+    </li>
+    <li>
+        <strong>input Tag</strong><br>
+        The &lt;input&gt; tag creates interactive fields like text, checkboxes, radio buttons, and more.
+    </li>
+    <li>
+        <strong>label Tag</strong><br>
+        The &lt;label&gt; tag defines a label for an input element to improve accessibility.
+    </li>
+    <li>
+        <strong>Detailed Explanation of Form Structure</strong><br>
+        Describes how form elements are organized and structured for better usability.
+    </li>
+    <li>
+        <strong>Name & Value Attributes</strong><br>
+        Attributes used to identify form data (name) and assign default or user-selected values (value).
+    </li>
+    <li>
+        <strong>Using name Attribute</strong><br>
+        The name attribute allows data to be sent to the server under a specific identifier.
+    </li>
+    <li>
+        <strong>Radio Buttons</strong><br>
+        Radio buttons allow users to select only one option from a set of choices.
+    </li>
+    <li>
+        <strong>for Attribute</strong><br>
+        The for attribute links a &lt;label&gt; to a specific &lt;input&gt; element by its id.
+    </li>
+    <li>
+        <strong>Setting Radio Button Values</strong><br>
+        Values are assigned to radio buttons to differentiate user selections in form submission.
+    </li>
+    <li>
+        <strong>Checkboxes</strong><br>
+        Checkboxes allow users to select one or multiple options independently.
+    </li>
+    <li>
+        <strong>Mini Project</strong><br>
+        A small project to practice creating forms with various input types.
+    </li>
+    <li>
+        <strong>Placeholder Attribute</strong><br>
+        The placeholder attribute displays a hint inside an input field before the user types.
+    </li>
+    <li>
+        <strong>input type="date"</strong><br>
+        Creates a field for selecting dates with a date picker interface.
+    </li>
+    <li>
+        <strong>input type="file"</strong><br>
+        Allows users to upload files from their device to the server.
+    </li>
+    <li>
+        <strong>input type="email"</strong><br>
+        Creates a field that validates email addresses entered by the user.
+    </li>
+    <li>
+        <strong>input type="tel"</strong><br>
+        Creates a field for entering telephone numbers with basic input validation.
+    </li>
+    <li>
+        <strong>textarea Tag</strong><br>
+        The &lt;textarea&gt; tag creates a multi-line text input field for longer user input.
+    </li>
+    <li>
+        <strong>select Tag</strong><br>
+        The &lt;select&gt; tag creates a dropdown menu for users to choose from options.
+    </li>
+    <li>
+        <strong>option Tag</strong><br>
+        The &lt;option&gt; tag defines individual choices within a dropdown menu.
+    </li>
+    <li>
+        <strong>button Tag</strong><br>
+        The &lt;button&gt; tag creates clickable buttons to submit forms or trigger actions.
+    </li>
+    <li>
+        <strong>Homework</strong><br>
+        Practice creating forms with different input types, labels, and buttons.
+    </li>
+    <li>
+        <strong>required Attribute</strong><br>
+        The required attribute ensures that users cannot submit a form without filling in the field.
+    </li>
+    <li>
+        <strong>Wrapping Up</strong><br>
+        Concludes the lesson by summarizing HTML form elements and their attributes.
+    </li>
+</ol>
 
-        <!-- Example Code -->
+
         <h2>Example Code</h2>
-        <pre>
-&lt;form action="#" method="post"&gt;
-    &lt;label for="username"&gt;Username:&lt;/label&gt;
-    &lt;input type="text" id="username" name="username"&gt;&lt;br&gt;&lt;br&gt;
-    &lt;label for="email"&gt;Email:&lt;/label&gt;
-    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
-    &lt;input type="submit" value="Submit"&gt;
-&lt;/form&gt;
-        </pre>
+        <pre><!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form Example (Code Visible)</title>
+</head>
+<body>
 
-        <!-- Screenshots Section -->
-        <h2>Screenshots / Chapters</h2>
+<h2>Sample Registration Form Code</h2>
+
+<pre>
+&lt;form action="#" method="post"&gt;
+    &lt;label for="username"&gt;Username:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" id="username" name="username" placeholder="Enter your username" required&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="email" id="email" name="email" placeholder="Enter your email" required&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label for="phone"&gt;Phone:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="tel" id="phone" name="phone" placeholder="Enter your phone number"&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label for="dob"&gt;Date of Birth:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="date" id="dob" name="dob"&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label&gt;Gender:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="radio" id="male" name="gender" value="male"&gt;
+    &lt;label for="male"&gt;Male&lt;/label&gt;
+    &lt;input type="radio" id="female" name="gender" value="female"&gt;
+    &lt;label for="female"&gt;Female&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label&gt;Hobbies:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="checkbox" id="reading" name="hobbies" value="reading"&gt;
+    &lt;label for="reading"&gt;Reading&lt;/label&gt;
+    &lt;input type="checkbox" id="gaming" name="hobbies" value="gaming"&gt;
+    &lt;label for="gaming"&gt;Gaming&lt;/label&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label for="bio"&gt;Bio:&lt;/label&gt;&lt;br&gt;
+    &lt;textarea id="bio" name="bio" placeholder="Write something about yourself"&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label for="country"&gt;Country:&lt;/label&gt;&lt;br&gt;
+    &lt;select id="country" name="country"&gt;
+        &lt;option value="india"&gt;India&lt;/option&gt;
+        &lt;option value="usa"&gt;USA&lt;/option&gt;
+        &lt;option value="uk"&gt;UK&lt;/option&gt;
+    &lt;/select&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+
+</body>
+</html>
+</pre>
+
+        <h2>Screenshots</h2>
         <p>Here will go the topic-list screenshot and some visual reference from the video:</p>
         <img src="images/day5-ss1.png" alt="Day 5 Screenshot 1" width="400">
         <img src="images/day5-ss2.png" alt="Day 5 Screenshot 2" width="400">
+        <img src="images/day5-ss3.png" alt="Day 5 Screenshot 2" width="400">
     </main>
 </body>
 </html>
